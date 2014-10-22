@@ -1,0 +1,16 @@
+*~
+.rvmrc
+dev_data/
+.DS_Store
+.powrc
+zeus.json
+.powenv
+Gemfile.local
+Gemfile.local.lock
+foo
+bin
+*.sublime-project
+*.sublime-workspace
+.ruby-version
+.bin
+.keep
