@@ -242,3 +242,9 @@ function gi() {
 	local IFS=,
 	eval npm install --save-dev grunt-{"$*"}
 }
+
+function ec2deploy {
+  knife ssh "chef_environment:$1 AND role:place_directory_$2" "axle deploy"
+}
+
+
