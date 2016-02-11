@@ -22,6 +22,6 @@ cask 'firefox'
 cask 'evernote'
 cask 'sourcetree'
 cask '1password'
-cask 'iterm'
+cask 'iterm2'
 
 cask 'font-source-code-pro'
