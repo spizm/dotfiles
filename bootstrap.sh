@@ -4,15 +4,16 @@ set -e
 #update OSX prefs
 ./set-defaults.sh
 
-#install ZSH antigen
+echo "***Installing ZSH antigen***"
 curl -L https://raw.githubusercontent.com/zsh-users/antigen/master/antigen.zsh > ~/.antigen.zsh
 
-#install homebrew
+echo "***Installing homebrew***"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-#install hombrew packages
+echo "***Installing hombrew packages***"
 brew tap Homebrew/bundle
 brew bundle --global
 
 #set up vim with janus
+echo "***Installing Vim janus***"
 curl -L https://bit.ly/janus-bootstrap | bash
