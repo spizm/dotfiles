@@ -1,8 +1,0 @@
-export PATH=/usr/local/bin:$PATH
-export PATH=.bin:$PATH
-export PATH=$HOME/bin:$PATH
-export PATH=$HOME/.aws/tools/ec2-api-tools/bin:$PATH
-export PATH=/usr/local/share/npm/bin:$PATH
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="/usr/local/heroku/bin:$PATH"
-export PATH=/usr/local/sbin:$PATH
