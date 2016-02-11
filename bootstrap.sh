@@ -19,5 +19,7 @@ echo "***Installing hombrew packages***"
 brew tap Homebrew/bundle
 brew bundle --global
 
-echo "***Installing Vim janus***"
-curl -L https://bit.ly/janus-bootstrap | bash
+if [ ! -d $HOME/.vim/janus ]; then
+  echo "***Installing Vim janus***"
+  curl -L https://bit.ly/janus-bootstrap | bash
+fi

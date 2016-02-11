@@ -13,6 +13,7 @@ brew 'htop'
 brew 'postgresql'
 brew 'wget'
 brew 'tmux'
+brew 'pgcli'
 
 cask 'atom'
 cask 'dropbox'
