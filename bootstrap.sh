@@ -23,3 +23,11 @@ if [ ! -d $HOME/.vim/janus ]; then
   echo "***Installing Vim janus***"
   curl -L https://bit.ly/janus-bootstrap | bash
 fi
+
+if grep -Fxq "/usr/local/bin/zsh" /etc/shells; then
+  echo "***Brew ZSH is approved for chsh***"
+else
+  echo "***Adding brew zsh as approved chsh***"
+  echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells > /dev/null
+  chsh -s /usr/local/bin/zsh
+fi
