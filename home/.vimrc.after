@@ -1,14 +1,9 @@
 colorscheme railscasts2 " theme to use
 set background=dark " we are using a dark background
-set gfn=Source_Code_Pro_for_PowerLine:h12 "console font
+set gfn=Source_Code_Pro:h12 "console font
 set encoding=utf-8
 set listchars=tab:\.\ ,trail:-
 set nowrap
-
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
-
 
 if !exists("my_auto_commands_loaded")
   let my_auto_commands_loaded = 1
