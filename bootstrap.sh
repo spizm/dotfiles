@@ -1,3 +1,4 @@
+set -e
 ./set-defaults.sh
 curl -L https://raw.githubusercontent.com/zsh-users/antigen/master/antigen.zsh > ~/.antigen.zsh
 
