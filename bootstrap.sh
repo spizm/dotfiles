@@ -2,6 +2,7 @@
 set -e
 
 #update OSX prefs
+echo "***Modifying OSX settings***"
 ./set-defaults.sh
 
 echo "***Installing ZSH antigen***"

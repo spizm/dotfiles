@@ -7,7 +7,6 @@
 #   https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 #
 # Run ./set-defaults.sh and you'll be good to go.
-echo 'Modifying OSX settings...'
 
 # Show the ~/Library folder.
 chflags nohidden ~/Library

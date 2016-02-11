@@ -1,1 +1,1 @@
-`./bootstrap.sh`
+system './bootstrap.sh'
