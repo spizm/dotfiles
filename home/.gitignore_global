@@ -8,9 +8,7 @@ zeus.json
 Gemfile.local
 Gemfile.local.lock
 foo
-bin
 *.sublime-project
 *.sublime-workspace
-.ruby-version
 .bin
 .keep

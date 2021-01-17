@@ -35,6 +35,7 @@
 	attributesfile = ~/.gitattributes
 	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
 	whitespace = space-before-tab,trailing-space
+  pager = delta
 
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
@@ -85,8 +86,29 @@
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.1/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /usr/local/Caskroom/sourcetree/2.1/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[commit]
+  template = /Users/mike/.stCommitMsg
+
+[diff]
+  colorMoved = default
+  colorMovedWs = allow-indentation-change
+  algorithm = histogram
+
+[interactive]
+  diffilter = delta --color-only
+
+[delta]
+        line-numbers = true
+        file-style = bright-yellow
+        commit-style = bold yellow
+        hunk-header-style = bold syntax
+        hunk-header-decoration-style = yellow box
+        commit-decoration-style = bold yellow box ul
+        file-decoration-style = yellow ul
+        line-numbers-left-style = "#555555"
+        line-numbers-right-style = "#555555"
