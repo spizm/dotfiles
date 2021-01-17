@@ -7,6 +7,9 @@ fi
 
 [ -e "${HOME}/.zsh_functions" ] && source "${HOME}/.zsh_functions"
 source /usr/local/share/antigen/antigen.zsh
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+source ~/.iterm2_shell_integration.`basename $SHELL`
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -15,18 +18,15 @@ antigen use oh-my-zsh
 # antigen bundle autojump
 antigen bundle rails
 
-antigen bundle aws
 antigen bundle brew
 antigen bundle bundler
 antigen bundle common-aliases
+antigen bundle docker
 antigen bundle gem
 antigen bundle git
 antigen bundle heroku
-#antigen bundle history-substring-search
-#antigen bundle knife
 antigen bundle osx
 antigen bundle pip
-#antigen bundle pow
 antigen bundle rake-fast
 antigen bundle rbenv
 antigen bundle rsync
@@ -45,12 +45,6 @@ antigen theme romkatv/powerlevel10k
 antigen apply
 
 export EDITOR='vim'
-
-export PATH="/usr/local/sbin:$PATH"
-
-test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

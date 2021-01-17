@@ -31,7 +31,7 @@
 
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
-	excludesfile = /Users/mike/.gitignore_global
+	excludesfile = /Users/mspiz/.gitignore_global
 	attributesfile = ~/.gitattributes
 	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
 	whitespace = space-before-tab,trailing-space
@@ -46,9 +46,11 @@
 	remote = green
 [color "diff"]
 	meta = yellow bold
+  commit = green bold
 	frag = magenta bold
 	old = red bold
-	new = green bold
+  new = green bold
+  whitespace = red reverse
 [color "status"]
 	added = yellow
 	changed = green
@@ -81,12 +83,12 @@
 
 [user]
 	name = Michael Spiz
-	email = mike@spiz.us
+	email = mspiz@whitepages.com
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /usr/local/Caskroom/sourcetree/2.1/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [filter "media"]
 	clean = git-media-clean %f
