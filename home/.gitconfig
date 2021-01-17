@@ -31,7 +31,7 @@
 
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
-	excludesfile = /Users/mspiz/.gitignore_global
+	excludesfile = /Users/mike/.gitignore_global
 	attributesfile = ~/.gitattributes
 	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
 	whitespace = space-before-tab,trailing-space
@@ -83,13 +83,7 @@
 
 [user]
 	name = Michael Spiz
-	email = mspiz@whitepages.com
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+	email = mike@spiz.us
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
